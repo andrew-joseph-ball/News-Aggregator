@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>News Aggregator</h1>
+        <nav>
+            <select id="categorySelect">
+                <option value="general">General</option>
+                <option value="technology">Technology</option>
+                <option value="business">Business</option>
+                <option value="sports">Sports</option>
+                <option value="entertainment">Entertainment</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Search news by keyword">
+            <button id="searchButton">Search</button>
+        </nav>
+    </header>
+    <main id="newsContainer"></main>
+        <div id="loadingSpinner" class="spinner hidden"></div>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
