@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 api = Api(app)
 
-NEWS_API_KEY = '7b0f3be379fb40319e70136ab494622f'
+NEWS_API_KEY = ''
 NEWS_API_URL = 'https://newsapi.org/v2/top-headlines'
 
 @app.route('/')
